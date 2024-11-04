@@ -1,0 +1,77 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+h1 {
+  font-family: 'Zen Tokyo Zoo', cursive;  /* Use the font */
+  color: rgba(124, 79, 79, 0.658);  /* Text color */
+  text-shadow: 2px 2px 4px rgba(21, 13, 13, 0.163);  /* Shadow for better visibility */
+  font-size: 4rem;  /* Default text size */
+  text-align: center;  /* Center text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Media queries for responsive text size */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3.5rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 3rem; /* Adjust font size for small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust font size for extra small screens */
+  }
+}
+
+/* src/main.css */
+
+.get-started-button {
+  width: 335px;               /* Default width of the button */
+  height: 42px;               /* Default height of the button */
+  border-radius: 40px;       /* Rounded corners */
+  background-color: #f35840; /* Button background color */
+  color: whitesmoke;               /* Text color */
+  font-size: 1rem;            /* Default font size */
+  border: none;              /* No border */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+  display: flex;             /* Flexbox for center alignment */
+  justify-content: center;   /* Center text horizontally */
+  align-items: center;       /* Center text vertically */
+  margin-top: 3%;            /* Margin above the button */
+}
+
+/* Media queries for responsive button size */
+@media (max-width: 1200px) {
+  .get-started-button {
+    width: 250px;             /* Adjust width for medium screens */
+    height: 40px;             /* Adjust height for medium screens */
+    font-size: 0.9rem;        /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .get-started-button {
+    width: 100px;             /* Adjust width for small screens */
+    height: 38px;             /* Adjust height for small screens */
+    font-size: 0.8rem;        /* Adjust font size for small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .get-started-button {
+    width: 40%;               /* Full width on extra small screens */
+    height: 36px;             /* Adjust height for extra small screens */
+    font-size: 0.7rem;        /* Adjust font size for extra small screens */
+  }
+}
+
+.get-started-button:hover {
+  background-color: #FF4500; /* Darker shade on hover */
+}
